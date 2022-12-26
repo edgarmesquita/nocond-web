@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nocondweb 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nocondweb
+  template:
+    metadata:
+      labels:
+        app: nocondweb 
+    spec:
+      containers:
+        - name: nocondweb 
+          image: nocond.azurecr.io/nocondweb
+          ports:
+          - containerPort: 80

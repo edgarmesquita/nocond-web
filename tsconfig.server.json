@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es2015"
+        ],
+        "typeRoots": ["./src/@types", "./node_modules/@types"],
+        "outDir": "dist",
+        "allowJs": false,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "jsx": "react",
+    },
+    "include": [
+        "src/**/*",
+    ],
+    "exclude": [
+        "node_modules",
+        "src/index.tsx",
+        "src/serviceWorker.ts"
+    ]
+}
